@@ -4,7 +4,7 @@ import "github.com/starter-go/i18n"
 
 // Options 表示可选的查询条件
 type Options struct {
-	Lang i18n.Language
+	Language i18n.Language
 }
 
 // Filter 定义类型管理器函数

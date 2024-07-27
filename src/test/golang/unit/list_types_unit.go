@@ -36,7 +36,7 @@ func (inst *ListTypesUnit) Units(list []*units.Registration) []*units.Registrati
 // Units ...
 func (inst *ListTypesUnit) test1() error {
 	opt := &mimetypes.Options{
-		Lang: "en_us",
+		Language: "en_us",
 	}
 	all := inst.TM.ListAll(opt)
 	for i, info := range all {

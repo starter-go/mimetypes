@@ -144,7 +144,7 @@ func (inst *DefaultTypeManager) makeResultItem(src *mimetypes.Registration, opt 
 
 	// lang1, lang2 := inst.getDefaultLanguage2()
 	langlist1 := inst.I18n.Available()
-	langlist2 := []i18n.Language{opt.Lang}
+	langlist2 := []i18n.Language{opt.Language}
 	langlist2 = append(langlist2, langlist1...)
 
 	res := inst.I18n.GetResources(langlist2...)
@@ -160,7 +160,7 @@ func (inst *DefaultTypeManager) makeResultItem(src *mimetypes.Registration, opt 
 		dst.Description = text2
 	})
 
-	dst.Language = opt.Lang
+	dst.Language = opt.Language
 	return dst
 }
 

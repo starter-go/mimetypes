@@ -49,7 +49,7 @@ func (inst *FindTypeUnit) test1() error {
 	// by suffix
 	langs := []i18n.Language{"de_de", "en_us", "fr_fr", "it_it", "zh_cn"}
 	for _, lang := range langs {
-		opt := &mimetypes.Options{Lang: lang}
+		opt := &mimetypes.Options{Language: lang}
 		info, err = inst.TM.FindBySuffix(".html", opt)
 		if err != nil {
 			return err
