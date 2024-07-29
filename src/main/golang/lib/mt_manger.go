@@ -35,9 +35,10 @@ func (inst *DefaultTypeManager) loadCache() (*mtCache, error) {
 		}
 		r2s := r1.ListRegistrations()
 		for _, r2 := range r2s {
-			c.put(r2)
+			c.add(r2)
 		}
 	}
+	c.complete()
 	return c, nil
 }
 

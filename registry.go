@@ -4,6 +4,7 @@ package mimetypes
 type Registration struct {
 	Name     string
 	Info     Info
+	Priority int
 	Suffixes []string
 }
 
