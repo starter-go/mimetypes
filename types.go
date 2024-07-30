@@ -15,6 +15,21 @@ func (t Type) String() string {
 	return string(t)
 }
 
+// Pure 取纯粹的类型 string （不含 params）
+func (t Type) Pure() string {
+	str := t.String()
+	t2, _, err := mime.ParseMediaType(str)
+	if err == nil {
+		return t2
+	}
+	return ""
+}
+
+// Full 取完整的类型 string
+func (t Type) Full() string {
+	return string(t)
+}
+
 // Parse 解析这个类型
 func (t Type) Parse() (string, map[string]string, error) {
 	str := t.String()
