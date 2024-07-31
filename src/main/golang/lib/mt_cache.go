@@ -10,12 +10,12 @@ import (
 type mtCache struct {
 	mutex sync.Mutex
 	list  []*mimetypes.Registration
-	table map[Key]*mimetypes.Registration
+	table map[Key]*mtHolder // mimetypes.Registration
 }
 
 func (inst *mtCache) init() {
 	inst.list = make([]*mimetypes.Registration, 0)
-	inst.table = make(map[Key]*mimetypes.Registration)
+	inst.table = make(map[Key]*mtHolder)
 }
 
 func (inst *mtCache) lock() {
@@ -31,14 +31,18 @@ func (inst *mtCache) innerPut(item *mimetypes.Registration) {
 	// put to table with name
 	t1 := item.Info.Type
 	key := keyForType(t1)
-	inst.table[key] = item
+	holder := inst.table[key]
+	if holder == nil {
+		holder = &mtHolder{}
+		inst.table[key] = holder
+	}
+	holder.add(item)
 
 	// put to table with suffix
 	for _, suffix := range item.Suffixes {
 		key = keyForSuffix(suffix)
-		inst.table[key] = item
+		inst.table[key] = holder
 	}
-
 }
 
 func (inst *mtCache) add(item *mimetypes.Registration) {

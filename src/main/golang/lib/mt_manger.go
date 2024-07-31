@@ -63,12 +63,12 @@ func (inst *DefaultTypeManager) Find(t mimetypes.Type, opt *mimetypes.Options) (
 	defer c.unlock()
 
 	key := keyForType(t)
-	reg := c.table[key]
-	if reg == nil {
+	holder := c.table[key]
+	if holder == nil {
 		return nil, fmt.Errorf("no type info, key=%s", key)
 	}
 
-	info := inst.makeResultItem(reg, opt)
+	info := inst.makeResultItem(holder.reg, opt)
 	return info, nil
 }
 
@@ -80,12 +80,12 @@ func (inst *DefaultTypeManager) FindBySuffix(suffix string, opt *mimetypes.Optio
 	defer c.unlock()
 
 	key := keyForSuffix(suffix)
-	reg := c.table[key]
-	if reg == nil {
+	holder := c.table[key]
+	if holder == nil {
 		return nil, fmt.Errorf("no type info, key=%s", key)
 	}
 
-	info := inst.makeResultItem(reg, opt)
+	info := inst.makeResultItem(holder.reg, opt)
 	return info, nil
 }
 
@@ -141,6 +141,9 @@ func (inst *DefaultTypeManager) makeResultItem(src *mimetypes.Registration, opt 
 
 	if opt == nil {
 		opt = new(mimetypes.Options)
+	}
+	if src == nil {
+		src = new(mimetypes.Registration)
 	}
 
 	// lang1, lang2 := inst.getDefaultLanguage2()
