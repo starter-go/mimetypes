@@ -8,8 +8,8 @@ import (
 
 const (
 	theModuleName     = "github.com/starter-go/mimetypes"
-	theModuleVersion  = "v0.0.3"
-	theModuleRevision = 4
+	theModuleVersion  = "v0.0.4"
+	theModuleRevision = 5
 )
 
 ////////////////////////////////////////////////////////////////////////////////
