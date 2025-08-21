@@ -28,7 +28,10 @@ func TestFindType(t *testing.T) {
 }
 
 func TestListTypes(t *testing.T) {
-	args := []string{}
+	args := []string{
+		"--debug.enabled=1",
+		"--vlog.level=error",
+	}
 	mod := getModuleT()
 	cfg := &units.Config{
 		Args:       args,
