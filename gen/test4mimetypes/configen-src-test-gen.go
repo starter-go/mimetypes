@@ -9,7 +9,7 @@ import (
 // type p37b02ea1a.DemoUnit in package:github.com/starter-go/mimetypes/src/test/golang/unit
 //
 // id:com-37b02ea1af0e6fe2-unit-DemoUnit
-// class:class-0dc072ed44b3563882bff4e657a52e62-Units
+// class:class-0dc072ed44b3563882bff4e657a52e62-Unit
 // alias:
 // scope:singleton
 //
@@ -19,7 +19,7 @@ type p37b02ea1af_unit_DemoUnit struct {
 func (inst* p37b02ea1af_unit_DemoUnit) register(cr application.ComponentRegistry) error {
 	r := cr.NewRegistration()
 	r.ID = "com-37b02ea1af0e6fe2-unit-DemoUnit"
-	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Units"
+	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Unit"
 	r.Aliases = ""
 	r.Scope = "singleton"
 	r.NewFunc = inst.new
@@ -47,7 +47,7 @@ func (inst* p37b02ea1af_unit_DemoUnit) inject(injext application.InjectionExt, i
 // type p37b02ea1a.FindTypeUnit in package:github.com/starter-go/mimetypes/src/test/golang/unit
 //
 // id:com-37b02ea1af0e6fe2-unit-FindTypeUnit
-// class:class-0dc072ed44b3563882bff4e657a52e62-Units
+// class:class-0dc072ed44b3563882bff4e657a52e62-Unit
 // alias:
 // scope:singleton
 //
@@ -57,7 +57,7 @@ type p37b02ea1af_unit_FindTypeUnit struct {
 func (inst* p37b02ea1af_unit_FindTypeUnit) register(cr application.ComponentRegistry) error {
 	r := cr.NewRegistration()
 	r.ID = "com-37b02ea1af0e6fe2-unit-FindTypeUnit"
-	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Units"
+	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Unit"
 	r.Aliases = ""
 	r.Scope = "singleton"
 	r.NewFunc = inst.new
@@ -91,7 +91,7 @@ func (inst*p37b02ea1af_unit_FindTypeUnit) getTM(ie application.InjectionExt)p85a
 // type p37b02ea1a.ListTypesUnit in package:github.com/starter-go/mimetypes/src/test/golang/unit
 //
 // id:com-37b02ea1af0e6fe2-unit-ListTypesUnit
-// class:class-0dc072ed44b3563882bff4e657a52e62-Units
+// class:class-0dc072ed44b3563882bff4e657a52e62-Unit
 // alias:
 // scope:singleton
 //
@@ -101,7 +101,7 @@ type p37b02ea1af_unit_ListTypesUnit struct {
 func (inst* p37b02ea1af_unit_ListTypesUnit) register(cr application.ComponentRegistry) error {
 	r := cr.NewRegistration()
 	r.ID = "com-37b02ea1af0e6fe2-unit-ListTypesUnit"
-	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Units"
+	r.Classes = "class-0dc072ed44b3563882bff4e657a52e62-Unit"
 	r.Aliases = ""
 	r.Scope = "singleton"
 	r.NewFunc = inst.new

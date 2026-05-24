@@ -12,22 +12,22 @@ import (
 type ListTypesUnit struct {
 
 	//starter:component
-	_as func(units.Units) //starter:as(".")
+	_as func(units.Unit) //starter:as(".")
 
 	TM mimetypes.Manager //starter:inject("#")
 
 }
 
-func (inst *ListTypesUnit) _impl() units.Units { return inst }
+func (inst *ListTypesUnit) _impl() units.Unit { return inst }
 
 // Units ...
-func (inst *ListTypesUnit) Units(list []*units.Registration) []*units.Registration {
+func (inst *ListTypesUnit) ListRegistrations(list []*units.Registration) []*units.Registration {
 
 	list = append(list, &units.Registration{
 		Name:     unitnames.ListTypes,
 		Enabled:  true,
 		Priority: 0,
-		Test:     inst.test1,
+		Do:       inst.test1,
 	})
 
 	return list

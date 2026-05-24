@@ -16,9 +16,9 @@ func getModuleT() application.Module {
 func TestFindType(t *testing.T) {
 	args := []string{}
 	mod := getModuleT()
-	cfg := &units.Config{
-		Args:       args,
-		Cases:      unitnames.FindType,
+	cfg := &units.Context{
+		Arguments:  args,
+		Selector:   unitnames.FindType,
 		Module:     mod,
 		Properties: nil,
 		T:          t,
@@ -33,9 +33,9 @@ func TestListTypes(t *testing.T) {
 		"--vlog.level=error",
 	}
 	mod := getModuleT()
-	cfg := &units.Config{
-		Args:       args,
-		Cases:      unitnames.ListTypes,
+	cfg := &units.Context{
+		Arguments:  args,
+		Selector:   unitnames.ListTypes,
 		Module:     mod,
 		Properties: nil,
 		T:          t,
