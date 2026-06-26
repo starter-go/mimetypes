@@ -111,6 +111,8 @@ github.com/starter-go/i18n v0.0.4 h1:8gKn+pFUqYvPXZfTrtnRa1Urlc7jp8BAEB7EFs7C0ko
 github.com/starter-go/i18n v0.0.4/go.mod h1:U5nd0lWaAZ8IGzG4ZHBxV9CAlPvTt2h/eJc0NqUulZg=
 github.com/starter-go/i18n v0.0.5 h1:WvjD2kPOpBhpMtpPtqlpshcKuBsuNYe/8+kOx0fRr6M=
 github.com/starter-go/i18n v0.0.5/go.mod h1:Im5G+3q23Dj5qNKy5ia4QR0L62QD9LKrana+n/mVAi0=
+github.com/starter-go/i18n v0.0.6 h1:p68wKFr/4nz3bJNMqF5HSzykDOyMlxcKH34yKZ5VFMM=
+github.com/starter-go/i18n v0.0.6/go.mod h1:TJ8P7G6UFCnTjiQ4mEEWOGI2Io54LlQPikK9SC7A17g=
 github.com/starter-go/libgin v1.0.10 h1:3qd3RH7+UvikZcJI5gXntlgkoV0JZhXx21k+LsDpbKM=
 github.com/starter-go/libgin v1.0.10/go.mod h1:wPRH7HxfFiH9UgdZI5ofl6RkOETQFdgA0cjEch1fHuc=
 github.com/starter-go/libgin v1.0.11 h1:c7foqQrlweStdTLm4H17oCn+ToUMo3ZcScN3B7UHUu4=
@@ -143,6 +145,8 @@ github.com/starter-go/units v0.0.7 h1:5S3cj45lV4aTr777J4H6QKOfbhUDmNA9nzOhywGeYi
 github.com/starter-go/units v0.0.7/go.mod h1:j+opup5DBbKm/RXhJkkWFW8hgQ8SnabgRs1P+BScUDU=
 github.com/starter-go/units v0.1.1 h1:Zd8tiu/+TiTO18afr7f8wRm4lViIG5EWUOjET+n0a3g=
 github.com/starter-go/units v0.1.1/go.mod h1:fnTy7hUsN6mWTak3/406hSaQ07RArTyPAX+lv5Dnr4o=
+github.com/starter-go/units v0.1.3 h1:MbpAAEY1dyRnuc1m2Ogq4Sp8qJfuhm+E9USQ7IEQv1k=
+github.com/starter-go/units v0.1.3/go.mod h1:fnTy7hUsN6mWTak3/406hSaQ07RArTyPAX+lv5Dnr4o=
 github.com/starter-go/vlog v0.9.7 h1:ysmWPxsJtgRxL5ht4abtWvJW9E7vLFAtuOOi/XtpSmY=
 github.com/starter-go/vlog v0.9.7/go.mod h1:ywWUCfWNTqXrelvO4/3sQ04SCW4ClR3PiN3qpSlXhH0=
 github.com/starter-go/vlog v0.9.8 h1:NmVv/lquEmvQ78nRf0C5eiJ0prNByV8o4aMmwBB3isc=

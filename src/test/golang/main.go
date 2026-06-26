@@ -4,12 +4,18 @@ import (
 	"os"
 
 	"github.com/starter-go/mimetypes/modules/mimetypes"
-	"github.com/starter-go/starter"
+	"github.com/starter-go/units"
 )
 
 func main() {
+
+	a := os.Args
 	m := mimetypes.ModuleForTest()
-	i := starter.Init(os.Args)
-	i.MainModule(m)
-	i.WithPanic(true).Run()
+	c := new(units.Context)
+
+	c.Arguments = a
+	c.Module = m
+	c.UsePanic = true
+
+	units.Run(c)
 }

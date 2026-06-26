@@ -1,6 +1,7 @@
 package unit
 
 import (
+	"context"
 	"encoding/json"
 
 	"github.com/starter-go/i18n"
@@ -37,7 +38,7 @@ func (inst *FindTypeUnit) ListRegistrations(list []*units.Registration) []*units
 }
 
 // Units ...
-func (inst *FindTypeUnit) test1() error {
+func (inst *FindTypeUnit) test1(cc context.Context) error {
 
 	// by type name
 	info, err := inst.TM.Find("text/html", nil)

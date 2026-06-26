@@ -1,6 +1,7 @@
 package unit
 
 import (
+	"context"
 	"fmt"
 
 	"github.com/starter-go/mimetypes"
@@ -34,7 +35,7 @@ func (inst *ListTypesUnit) ListRegistrations(list []*units.Registration) []*unit
 }
 
 // Units ...
-func (inst *ListTypesUnit) test1() error {
+func (inst *ListTypesUnit) test1(cc context.Context) error {
 	opt := &mimetypes.Options{
 		Language: "en_us",
 	}
